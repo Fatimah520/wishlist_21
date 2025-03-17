@@ -1,0 +1,97 @@
+/* General Page Styling */
+body {
+    background-color: #FFF8EE;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    box-sizing: border-box; /* Ensures padding doesn't cause overflow */
+}
+
+/* Image Container */
+.image-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 90%; /* Ensure there is padding on the sides */
+    max-width: 800px;
+    height: auto;
+    padding: 20px;
+    margin: 0 auto; /* Center the container */
+}
+
+/* Image Styling */
+#firstPage {
+    width: 100%;
+    height: auto;
+    display: block;
+    border: 4px solid darkred;
+}
+
+/* Overlay Buttons Container */
+.button-container {
+    display: flex;
+    justify-content: space-between; /* Ensure even spacing */
+    flex-wrap: wrap; /* Prevents buttons from overflowing */
+    max-width: 100%; /* Allows responsiveness */
+    width: 80%;
+    margin-top: -180px; /* Moves buttons closer */
+    padding: 0 5%; /* Adds padding on left and right */
+}
+
+/* Overlay Buttons */
+.overlay-button {
+    background-color: #825C5C;
+    color: white;
+    border-radius: 5px;
+    border: 2px solid black;
+    padding: 10px 15px; /* Adjust padding */
+    cursor: pointer;
+    font-size: 16px;
+    width: auto; /* Ensures buttons don't stretch */
+    min-width: 100px;
+    text-align: center;
+    display: flex; /* Enables flexbox for centering */
+    align-items: center; /* Centers text vertically */
+    justify-content: center; /* Centers text horizontally */
+    height: 50px; /* Set a consistent height */
+    line-height: normal; /* Prevents extra spacing */
+    box-sizing: border-box; /* Ensures padding doesn't increase size */
+}
+
+/* Ensure no unwanted overflow */
+html, body {
+    height: 100%;
+    overflow-x: hidden;
+    padding: 0;
+}
+
+/* Items */
+.digital {
+    position: absolute; /* Allows positioning inside .image-container */
+    top:27%; /* Move it higher by adjusting this value */
+    left: 23%;
+    transform: translateX(-50%); /* Center horizontally */
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.digital a {
+    text-decoration: none; /* Removes underline */
+    color: inherit; /* Keeps text color same as surrounding text */
+}
+
+.digital a:hover {
+    color: #ff69b4; /* Example: Changes color on hover */
+}
+
+
+#items {
+    font-size: 22px;
+    margin: 0;
+}
+.bold-number {
+    font-weight: bold;
+}
