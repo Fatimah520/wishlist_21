@@ -70,17 +70,24 @@ html, body {
 /* Items */
 .digital {
     position: absolute; /* Allows positioning inside .image-container */
-    top:27%; /* Move it higher by adjusting this value */
-    left: 23%;
+    top:23.3%; /* Move it higher by adjusting this value */
+    left: 40%;
     transform: translateX(-50%); /* Center horizontally */
-    padding: 5px 10px;
+    padding: 20px;
+    width: 80%;
+    max-width: 500px;
+    text-align: left;
     border-radius: 5px;
     text-decoration: none;
 }
 
 .digital a {
+    display: block; /* Puts each item on a new line */
     text-decoration: none; /* Removes underline */
-    color: inherit; /* Keeps text color same as surrounding text */
+    color: inherit; /* Keeps text readable */
+    font-size: 19px; /* Makes text more consistent */
+    line-height: 1.5; /* Adds spacing between lines */
+    font-weight: normal;/* Keeps text color same as surrounding text */
 }
 
 .digital a:hover {
@@ -94,4 +101,22 @@ html, body {
 }
 .bold-number {
     font-weight: bold;
+}
+
+/* Remove underline and style the button */
+.overlay-button {
+    display: inline-block;
+    text-decoration: none; /* Removes underline */
+    background-color: #3498db; /* Default button color */
+    color: white; /* Text color */
+    padding: 10px 20px;
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth color transition */
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Change color on hover */
+.overlay-button:hover {
+    background-color: #ff69b4; /* Darker blue when hovered */
 }
